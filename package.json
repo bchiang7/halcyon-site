@@ -1,0 +1,17 @@
+{
+  "name": "gatsby-starter-hello-world",
+  "description": "Gatsby hello world starter",
+  "license": "MIT",
+  "scripts": {
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve"
+  },
+  "dependencies": {
+    "gatsby": "^1.9.158",
+    "gatsby-link": "^1.6.34",
+    "gatsby-plugin-react-helmet": "^2.0.4",
+    "gatsby-plugin-sass": "^1.0.16",
+    "react-helmet": "^5.2.0"
+  }
+}

@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700');
+$bg: #191e27;
+$fg: #212733;
+$hover: #303540;
+$active: #343d4a;
+$comment: #607080;
+$grey: #738699;
+$light-grey: #abb2bf;
+$white: #d9d7ce;
+$accent: #ffcc66;
+$blue: #5ccfe6;
+$green: #bae67e;
+$orange: #ffae57;
+$yellow: #ffd580;
+$purple: #c3a6ff;
+$red: #f07178;
+$seafoam: #95e6cb;
+@mixin tooltip($color) {
+  background-color: $color;
+  &:before {
+    content: attr(data-hex);
+  }
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inconsolata', monospace;
+  color: $white;
+  background: $fg;
+  background: -webkit-linear-gradient(to bottom, $active, $bg);
+  background: linear-gradient(to bottom, $active, $bg);
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: $white;
+}
+
+button {
+  border: 0;
+  outline: 0;
+}
+
+.site {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto; // keeps footer at the bottom
+  grid-template-columns: 100%;
+  header {
+    padding: 50px 25px;
+    text-align: center;
+    h1 {
+      color: $accent;
+      font-size: 70px;
+      background: -webkit-linear-gradient($yellow, $accent);
+      background: linear-gradient($yellow, $accent);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    h2 {
+      color: $light-grey;
+      font-size: 20px;
+      font-weight: 400;
+      margin-bottom: 100px;
+    }
+    img {
+      max-width: 1400px;
+    }
+  }
+  main {
+    padding: 50px 100px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    align-content: center;
+    justify-content: center;
+    @media (max-width: 768px) {
+      padding: 50px;
+    }
+    .platform {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      background-color: $active;
+      color: $white;
+      height: 200px;
+      padding: 30px;
+      text-align: center;
+      font-size: 16px;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 -5px rgba(0, 0, 0, 0.1);
+      &:hover {
+        background-color: $hover;
+        transform: translateY(-5px);
+      }
+      .logo {
+        width: 100px;
+        height: 100px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        &.sublime {
+          background-image: url('../../static/logos/sublime.png');
+          width: 75px;
+          height: 75px;
+        }
+        &.atom {
+          background-image: url('../../static/logos/atom-green.png');
+        }
+        &.vscode {
+          background-image: url('../../static/logos/vscode-new.png');
+        }
+        &.iterm {
+          background-image: url('../../static/logos/iterm.png');
+        }
+        &.hyperterm {
+          background-image: url('../../static/logos/hyperterm.png');
+          width: 85px;
+          height: 85px;
+        }
+      }
+    }
+  }
+  .palette {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(7, 30px);
+    grid-gap: 20px;
+    justify-content: center;
+    margin: 100px auto;
+    @media (max-width: 400px) {
+      grid-template-columns: repeat(7, 20px);
+    }
+    .color {
+      position: relative;
+      width: 30px;
+      height: 30px;
+      border-radius: 100%;
+      background-color: $grey;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      font-family: 'Inconsolata', monospace;
+      @media (max-width: 400px) {
+        width: 20px;
+        height: 20px;
+      }
+      &:hover {
+        transform: translateY(-5px);
+        &:before {
+          opacity: 1;
+        }
+      }
+      &:before {
+        display: block;
+        content: '';
+        position: absolute;
+        top: -40px;
+        left: -20px;
+        background-color: $active;
+        color: $light-grey;
+        font-size: 16px;
+        border-radius: 3px;
+        padding: 5px 7px;
+        opacity: 0;
+        transition: all 0.3s ease;
+      }
+      &.bg {
+        @include tooltip($bg);
+      }
+      &.fg {
+        @include tooltip($fg);
+      }
+      &.hover {
+        @include tooltip($hover);
+      }
+      &.active {
+        @include tooltip($active);
+      }
+      &.comment {
+        @include tooltip($comment);
+      }
+      &.grey {
+        @include tooltip($grey);
+      }
+      &.light-grey {
+        @include tooltip($light-grey);
+      }
+      &.white {
+        @include tooltip($white);
+      }
+      &.blue {
+        @include tooltip($blue);
+      }
+      &.green {
+        @include tooltip($green);
+      }
+      &.orange {
+        @include tooltip($orange);
+      }
+      &.yellow {
+        @include tooltip($yellow);
+      }
+      &.purple {
+        @include tooltip($purple);
+      }
+      &.red {
+        @include tooltip($red);
+      }
+      &.seafoam {
+        @include tooltip($seafoam);
+      }
+    }
+  }
+  #copy {
+    width: 0px;
+    max-width: 0px;
+    max-height: 0px;
+    opacity: 0;
+  }
+  footer {
+    color: $grey;
+    height: 70px;
+    text-align: center;
+    padding: 0 50px;
+    a {
+      color: inherit;
+    }
+  }
+  #input {
+    display: none;
+  }
+}
