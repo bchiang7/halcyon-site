@@ -13,5 +13,8 @@
     "gatsby-plugin-react-helmet": "^2.0.4",
     "gatsby-plugin-sass": "^1.0.16",
     "react-helmet": "^5.2.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.1.0"
   }
 }

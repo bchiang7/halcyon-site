@@ -5,19 +5,24 @@ import Demo from '../../static/images/demo.png';
 
 export default () => (
   <div className="site">
-    <Helmet
-      title="Halcyon Theme"
-      meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' }
-      ]}
-    />
+    <Helmet>
+      <title>Halcyon</title>
+      <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/bchiang7/halcyon-vscode/master/images/logo.png" hreflang="en-us" />>
+      <meta name="description" content="A minimal, dark theme for Sublime Text, Atom, VS Code, and more." />
+      <meta name="keywords" content="halcyon, halcyon theme, dark theme, ayu mirage" />
+      <meta property="og:title" content="Halcyon Theme" />
+      <meta property="og:description" content="A minimal, dark theme for Sublime Text, Atom, VS Code, and more." />
+      <meta property="og:type" content="website" />
+      <meta property="og:image" content="https://raw.githubusercontent.com/bchiang7/halcyon-site/master/static/images/og.png" />
+      <meta property="og:image:width" content="1280" />
+      <meta property="og:image:height" content="800" />
+      <meta property="og:image:type" content="image/png" />
+    </Helmet>
+
     <header>
       <h1>Halcyon</h1>
-      <h2>
-        /* A minimal, dark theme for Sublime Text, Atom, VS Code, and more. */
-      </h2>
-      <img src={Demo} alt="" />
+      <h2>/* A minimal, dark theme for Sublime Text, Atom, VS Code, and more. */</h2>
+      <img src={Demo} alt="screenshot" />
     </header>
 
     <main>
@@ -45,13 +50,21 @@ export default () => (
         <div className="logo vscode" />
         <div className="name">VS Code</div>
       </a>
-      <a href="#" target="_blank" className="platform">
+      <a
+        href="https://github.com/bchiang7/halcyon-iterm"
+        target="_blank"
+        className="platform"
+      >
         <div className="logo iterm" />
         <div className="name">iTerm</div>
       </a>
-      <a href="#" target="_blank" className="platform">
+      <a
+        href="https://www.npmjs.com/package/hyper-halcyon-theme"
+        target="_blank"
+        className="platform"
+      >
         <div className="logo hyperterm" />
-        <div className="name">Hyperterm</div>
+        <div className="name">Hyper</div>
       </a>
     </main>
 
