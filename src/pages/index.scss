@@ -15,6 +15,7 @@ $yellow: #ffd580;
 $purple: #c3a6ff;
 $red: #f07178;
 $seafoam: #95e6cb;
+$magenta: #c678dd;
 @mixin tooltip($color) {
   background-color: $color;
   &:before {
@@ -76,6 +77,7 @@ button {
     h2 {
       color: $light-grey;
       font-size: 20px;
+      line-height: 1.5;
       font-weight: 400;
       margin-bottom: 100px;
     }
@@ -106,7 +108,6 @@ button {
       text-align: center;
       font-size: 16px;
       transition: all 0.3s ease;
-      box-shadow: 0 0 -5px rgba(0, 0, 0, 0.1);
       &:hover {
         background-color: $hover;
         transform: translateY(-5px);
@@ -141,13 +142,18 @@ button {
   }
   .palette {
     display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: repeat(7, 30px);
+    grid-template-columns: repeat(8, 30px);
     grid-gap: 20px;
-    justify-content: center;
     margin: 100px auto;
     @media (max-width: 400px) {
-      grid-template-columns: repeat(7, 20px);
+      grid-template-columns: repeat(8, 20px);
+      grid-gap: 15px;
+    }
+    h3 {
+      grid-column: 1 / -1;
+      text-align: center;
+      font-weight: 400;
+      color: $light-grey;
     }
     .color {
       position: relative;
@@ -172,13 +178,13 @@ button {
         display: block;
         content: '';
         position: absolute;
-        top: -40px;
+        top: -35px;
         left: -20px;
         background-color: $active;
         color: $light-grey;
         font-size: 16px;
         border-radius: 3px;
-        padding: 5px 7px;
+        padding: 4px 6px;
         opacity: 0;
         transition: all 0.3s ease;
       }
@@ -206,6 +212,9 @@ button {
       &.white {
         @include tooltip($white);
       }
+      &.accent {
+        @include tooltip($accent);
+      }
       &.blue {
         @include tooltip($blue);
       }
@@ -227,6 +236,9 @@ button {
       &.seafoam {
         @include tooltip($seafoam);
       }
+      &.magenta {
+        @include tooltip($magenta);
+      }
     }
   }
   #copy {
@@ -238,6 +250,7 @@ button {
   footer {
     color: $grey;
     height: 70px;
+    font-size: 17px;
     text-align: center;
     padding: 0 50px;
     a {

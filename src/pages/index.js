@@ -56,14 +56,55 @@ export default () => (
     </main>
 
     <section className="palette">
-      {/* <button className="color bg" data-hex="#191e27" />
-      <button className="color fg" data-hex="#212733" />
-      <button className="color hover" data-hex="#303540" />
-      <button className="color active" data-hex="#343d4a" />
-      <button className="color comment" data-hex="#607080" />
-      <button className="color grey" data-hex="#738699" />
-      <button className="color light-grey" data-hex="#abb2bf" />
-      <button className="color white" data-hex="#d9d7ce" /> */}
+      <h3>Click to copy!</h3>
+      <button
+        className="color bg"
+        data-hex="#191E27"
+        aria-label="Copied!"
+        onClick={e => CopyToClipboard(e)}
+      />
+      <button
+        className="color fg"
+        data-hex="#212733"
+        aria-label="Copied!"
+        onClick={e => CopyToClipboard(e)}
+      />
+      <button
+        className="color active"
+        data-hex="#343D4A"
+        aria-label="Copied!"
+        onClick={e => CopyToClipboard(e)}
+      />
+      <button
+        className="color comment"
+        data-hex="#607080"
+        aria-label="Copied!"
+        onClick={e => CopyToClipboard(e)}
+      />
+      <button
+        className="color grey"
+        data-hex="#738699"
+        aria-label="Copied!"
+        onClick={e => CopyToClipboard(e)}
+      />
+      <button
+        className="color light-grey"
+        data-hex="#ABB2BF"
+        aria-label="Copied!"
+        onClick={e => CopyToClipboard(e)}
+      />
+      <button
+        className="color white"
+        data-hex="#D9D7CE"
+        aria-label="Copied!"
+        onClick={e => CopyToClipboard(e)}
+      />
+      <button
+        className="color accent"
+        data-hex="#FFCC66"
+        aria-label="Copied!"
+        onClick={e => CopyToClipboard(e)}
+      />
       <button
         className="color blue"
         data-hex="#5CCFE6"
@@ -98,6 +139,11 @@ export default () => (
       <button
         className="color seafoam"
         data-hex="#95E6CB"
+        onClick={e => CopyToClipboard(e)}
+      />
+      <button
+        className="color magenta"
+        data-hex="#C678DD"
         onClick={e => CopyToClipboard(e)}
       />
     </section>
