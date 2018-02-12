@@ -1,11 +1,13 @@
 # Halcyon Theme Site
 
+![screenshot](static/images/og.png)
+
 Built with [Gatsby](https://www.gatsbyjs.org/)
 
-## Developing
+## Develop
 
 `gatsby develop`
 
-## Deploying
+## Deploy
 
 `npm run deploy`
