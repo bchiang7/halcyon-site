@@ -1,6 +1,7 @@
 {
-  "name": "gatsby-starter-hello-world",
-  "description": "Gatsby hello world starter",
+  "name": "halcyon",
+  "description":
+    "A minimal, dark theme for Sublime Text, Atom, VS Code, and more.",
   "license": "MIT",
   "scripts": {
     "develop": "gatsby develop",

@@ -170,11 +170,11 @@ button {
       &:hover {
         transform: translateY(-5px);
         &:before {
-          opacity: 1;
+          display: block;
         }
       }
       &:before {
-        display: block;
+        display: none;
         content: '';
         position: absolute;
         top: -35px;
@@ -184,7 +184,6 @@ button {
         font-size: 16px;
         border-radius: 3px;
         padding: 4px 6px;
-        opacity: 0;
         transition: all 0.3s ease;
       }
       &.bg {
