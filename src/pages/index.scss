@@ -1,18 +1,18 @@
-$bg: #191e27;
-$fg: #212733;
-$hover: #303540;
-$active: #343d4a;
-$comment: #607080;
-$grey: #738699;
-$light-grey: #abb2bf;
-$white: #d9d7ce;
+$bg: #171c28;
+$fg: #1d2433;
+$hover: #2f3b54;
+$active: #2f3b54;
+$grey: #8695b7;
+$comment: darken($grey, 10%);
+$light-grey: #a2aabc;
+$white: #d7dce2;
 $accent: #ffcc66;
 $blue: #5ccfe6;
 $green: #bae67e;
 $orange: #ffae57;
 $yellow: #ffd580;
 $purple: #c3a6ff;
-$red: #f07178;
+$red: #ef6b73;
 $seafoam: #95e6cb;
 $magenta: #c678dd;
 @mixin tooltip($color) {
@@ -141,11 +141,11 @@ button {
   }
   .palette {
     display: grid;
-    grid-template-columns: repeat(8, 30px);
+    grid-template-columns: repeat(7, 30px);
     grid-gap: 20px;
     margin: 100px auto;
     @media (max-width: 400px) {
-      grid-template-columns: repeat(8, 20px);
+      grid-template-columns: repeat(7, 20px);
       grid-gap: 15px;
     }
     h3 {

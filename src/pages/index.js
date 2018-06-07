@@ -7,13 +7,30 @@ export default () => (
   <div className="site">
     <Helmet>
       <title>Halcyon</title>
-      <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/bchiang7/halcyon-vscode/master/images/logo.png" hreflang="en-us" />>
-      <meta name="description" content="A minimal, dark theme for Sublime Text, Atom, VS Code, and more." />
-      <meta name="keywords" content="halcyon, halcyon theme, dark theme, ayu mirage" />
+      <link
+        rel="icon"
+        type="image/png"
+        href="https://raw.githubusercontent.com/bchiang7/halcyon-vscode/master/images/logo.png"
+        hreflang="en-us"
+      />>
+      <meta
+        name="description"
+        content="A minimal, dark theme for Sublime Text, Atom, VS Code, and more."
+      />
+      <meta
+        name="keywords"
+        content="halcyon, halcyon theme, dark theme, ayu mirage"
+      />
       <meta property="og:title" content="Halcyon Theme" />
-      <meta property="og:description" content="A minimal, dark theme for Sublime Text, Atom, VS Code, and more." />
+      <meta
+        property="og:description"
+        content="A minimal, dark theme for Sublime Text, Atom, VS Code, and more."
+      />
       <meta property="og:type" content="website" />
-      <meta property="og:image" content="https://raw.githubusercontent.com/bchiang7/halcyon-site/master/static/images/og.png" />
+      <meta
+        property="og:image"
+        content="https://raw.githubusercontent.com/bchiang7/halcyon-site/master/static/images/og.png"
+      />
       <meta property="og:image:width" content="1280" />
       <meta property="og:image:height" content="800" />
       <meta property="og:image:type" content="image/png" />
@@ -21,7 +38,9 @@ export default () => (
 
     <header>
       <h1>Halcyon</h1>
-      <h2>/* A minimal, dark theme for Sublime Text, Atom, VS Code, and more. */</h2>
+      <h2>
+        /* A minimal, dark theme for Sublime Text, Atom, VS Code, and more. */
+      </h2>
       <img src={Demo} alt="screenshot" />
     </header>
 
@@ -72,84 +91,84 @@ export default () => (
       <h3>Click to copy!</h3>
       <button
         className="color bg"
-        data-hex="#191E27"
+        data-hex="#171c28"
         aria-label="Copied!"
         onClick={e => CopyToClipboard(e)}
       />
       <button
         className="color fg"
-        data-hex="#212733"
+        data-hex="#1d2433"
         aria-label="Copied!"
         onClick={e => CopyToClipboard(e)}
       />
       <button
         className="color active"
-        data-hex="#343D4A"
+        data-hex="#2f3b54"
         aria-label="Copied!"
         onClick={e => CopyToClipboard(e)}
       />
       <button
         className="color comment"
-        data-hex="#607080"
+        data-hex="#6679a4"
         aria-label="Copied!"
         onClick={e => CopyToClipboard(e)}
       />
       <button
         className="color grey"
-        data-hex="#738699"
+        data-hex="#8695b7"
         aria-label="Copied!"
         onClick={e => CopyToClipboard(e)}
       />
       <button
         className="color light-grey"
-        data-hex="#ABB2BF"
+        data-hex="#a2aabc"
         aria-label="Copied!"
         onClick={e => CopyToClipboard(e)}
       />
       <button
         className="color white"
-        data-hex="#D9D7CE"
+        data-hex="#d7dce2"
         aria-label="Copied!"
         onClick={e => CopyToClipboard(e)}
       />
       <button
         className="color accent"
-        data-hex="#FFCC66"
+        data-hex="#ffcc66"
         aria-label="Copied!"
         onClick={e => CopyToClipboard(e)}
       />
       <button
         className="color blue"
-        data-hex="#5CCFE6"
+        data-hex="#5ccfe6"
         aria-label="Copied!"
         onClick={e => CopyToClipboard(e)}
       />
       <button
         className="color green"
-        data-hex="#BAE67E"
+        data-hex="#bae67e"
         onClick={e => CopyToClipboard(e)}
       />
       <button
         className="color orange"
-        data-hex="#FFAE57"
+        data-hex="#ffae57"
         onClick={e => CopyToClipboard(e)}
       />
       <button
         className="color yellow"
-        data-hex="#FFD580"
+        data-hex="#ffd580"
         onClick={e => CopyToClipboard(e)}
       />
       <button
         className="color purple"
-        data-hex="#C3A6FF"
+        data-hex="#c3a6ff"
         onClick={e => CopyToClipboard(e)}
       />
       <button
         className="color red"
-        data-hex="#F07178"
+        data-hex="#ef6b73"
         onClick={e => CopyToClipboard(e)}
       />
-      <button
+      {/* <button
         className="color seafoam"
         data-hex="#95E6CB"
         onClick={e => CopyToClipboard(e)}
@@ -158,7 +177,7 @@ export default () => (
         className="color magenta"
         data-hex="#C678DD"
         onClick={e => CopyToClipboard(e)}
-      />
+      /> */}
     </section>
 
     <div id="copy" />
