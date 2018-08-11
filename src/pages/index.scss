@@ -1,3 +1,5 @@
+@import url(https://cdn.rawgit.com/tonsky/FiraCode/1.205/distr/fira_code.css);
+
 $bg: #171c28;
 $fg: #1d2433;
 $hover: #2f3b54;
@@ -15,6 +17,7 @@ $purple: #c3a6ff;
 $red: #ef6b73;
 $seafoam: #95e6cb;
 $magenta: #c678dd;
+
 @mixin tooltip($color) {
   background-color: $color;
   &:before {
@@ -36,7 +39,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Inconsolata', monospace;
+  font-family: 'Fira Code', 'Consolas', monospace;
   color: $white;
   background: $fg;
   background: -webkit-linear-gradient(to bottom, $active, $bg);
@@ -68,14 +71,16 @@ button {
     h1 {
       color: $accent;
       font-size: 70px;
+      font-weight: 500;
       background: -webkit-linear-gradient($yellow, $accent);
       background: linear-gradient($yellow, $accent);
       -webkit-background-clip: text;
+      background-clip: text;
       -webkit-text-fill-color: transparent;
     }
     h2 {
       color: $light-grey;
-      font-size: 20px;
+      font-size: 18px;
       line-height: 1.5;
       font-weight: 400;
       margin-bottom: 100px;
@@ -137,6 +142,11 @@ button {
           height: 85px;
         }
       }
+      .name {
+        margin-top: 10px;
+        font-size: 16px;
+        color: $grey;
+      }
     }
   }
   .palette {
@@ -152,7 +162,7 @@ button {
       grid-column: 1 / -1;
       text-align: center;
       font-weight: 400;
-      color: $light-grey;
+      color: $grey;
     }
     .color {
       position: relative;

@@ -1,22 +1,21 @@
 {
   "name": "halcyon",
-  "description":
-    "A minimal, dark theme for Sublime Text, Atom, VS Code, and more.",
+  "description": "A minimal, dark theme for Sublime Text, Atom, VS Code, and more.",
   "license": "MIT",
   "scripts": {
-    "develop": "gatsby develop",
+    "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "dependencies": {
-    "gatsby": "^1.9.158",
-    "gatsby-link": "^1.6.34",
-    "gatsby-plugin-react-helmet": "^2.0.4",
-    "gatsby-plugin-sass": "^1.0.16",
+    "gatsby": "^1.9.277",
+    "gatsby-link": "^1.6.46",
+    "gatsby-plugin-react-helmet": "^2.0.11",
+    "gatsby-plugin-sass": "^1.0.26",
     "react-helmet": "^5.2.0"
   },
   "devDependencies": {
-    "gh-pages": "^1.1.0"
+    "gh-pages": "^1.2.0"
   }
 }
