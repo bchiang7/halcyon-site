@@ -59,6 +59,10 @@ const Layout = ({ children }) => (
           <meta name="twitter:description" content={site.siteMetadata.description} />
           <meta name="twitter:image:src" content={ogImage} />
           <meta name="twitter:image:alt" content={site.siteMetadata.title} />
+          <link
+            rel="stylesheet"
+            href="https://cdn.rawgit.com/tonsky/FiraCode/1.206/distr/fira_code.css"
+          />
         </Helmet>
         <Header title={site.siteMetadata.title} description={site.siteMetadata.description} />
         <main>{children}</main>
