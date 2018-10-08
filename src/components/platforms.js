@@ -10,13 +10,11 @@ import iTerm from '../images/logos/iterm.png';
 import Hyper from '../images/logos/hyperterm.png';
 
 const PlatformsContainer = styled.div`
-  padding: 50px 100px;
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 20px;
-  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  padding: 50px;
+  width: 100%;
 
   ${media.tablet`padding: 50px 25px;`};
 `;
@@ -30,7 +28,10 @@ const Platform = styled.a`
   padding: 30px;
   text-align: center;
   font-size: 16px;
-  transition: all 0.3s ease;
+  transition: ${theme.transition};
+  min-width: 250px;
+  margin: 10px;
+
   &:hover {
     background-color: ${theme.colors.hover};
     transform: translateY(-5px);
