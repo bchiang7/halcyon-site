@@ -8,6 +8,18 @@
   A minimal, dark blue theme for VS Code, Sublime Text, Atom, and more.
 </h3>
 
+## 🖥 Platforms
+
+[VS Code](https://marketplace.visualstudio.com/items?itemName=brittanychiang.halcyon-vscode)
+
+[Sublime Text](https://packagecontrol.io/packages/Halcyon%20Theme)
+
+[Atom](https://atom.io/themes/halcyon-syntax)
+
+[iTerm](https://github.com/bchiang7/halcyon-iterm)
+
+[Hyper](https://www.npmjs.com/package/hyper-halcyon-theme)
+
 ## 🚀 Quick start
 
 1.  **Install the Gatsby CLI.**
