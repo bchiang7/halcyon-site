@@ -19,7 +19,8 @@ const theme = {
   },
 
   fonts: {
-    base: 'Fira Code, Consolas, -apple-system, system-ui, BlinkMacSystemFont, Arial, sans-serif',
+    base:
+      'Fira Code, Fira Mono, SF Mono, Roboto Mono, Consolas, Monaco, Lucida Console, Courier New, monospace',
   },
 
   fontSizes: {

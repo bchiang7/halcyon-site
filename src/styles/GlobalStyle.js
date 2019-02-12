@@ -1,8 +1,8 @@
-import { injectGlobal } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 import theme from './theme';
 import mixins from './mixins';
 
-const base = injectGlobal`
+const GlobalStyle = createGlobalStyle`
   html {
     box-sizing: border-box;
     width: 100%;
@@ -32,7 +32,6 @@ const base = injectGlobal`
   a {
     ${mixins.link};
   }
-
 
   img {
     width: 100%;
@@ -69,4 +68,4 @@ const base = injectGlobal`
   }
 `;
 
-export default base;
+export default GlobalStyle;

@@ -6,8 +6,8 @@ import { StaticQuery, graphql } from 'gatsby';
 import Header from './header';
 import Footer from './footer';
 
-import '../styles/base';
 import styled from 'styled-components';
+import { GlobalStyle } from '../styles';
 
 import ogImage from '../images/og.png';
 
@@ -64,8 +64,13 @@ const Layout = ({ children }) => (
             href="https://cdn.rawgit.com/tonsky/FiraCode/1.206/distr/fira_code.css"
           />
         </Helmet>
+
+        <GlobalStyle />
+
         <Header title={site.siteMetadata.title} description={site.siteMetadata.description} />
+
         <main>{children}</main>
+
         <Footer />
       </Site>
     )}

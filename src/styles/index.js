@@ -1,6 +1,6 @@
 import theme from './theme';
-import base from './base';
+import GlobalStyle from './GlobalStyle';
 import mixins from './mixins';
 import media from './media';
 
-export { theme, base, mixins, media };
+export { theme, GlobalStyle, mixins, media };
