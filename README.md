@@ -1,12 +1,14 @@
 <p align="center">
-  <img alt="Halcyon" src="https://brittanychiang.gallerycdn.vsassets.io/extensions/brittanychiang/halcyon-vscode/0.1.13/1538613523376/Microsoft.VisualStudio.Services.Icons.Default" width="60" />
+  <img alt="Halcyon" src="https://raw.githubusercontent.com/bchiang7/halcyon-vscode/master/images/logo.png" width="100" />
 </p>
 <h1 align="center">
   Halcyon
 </h1>
-<h3 align="center">
+<p align="center">
   A minimal, dark blue theme for VS Code, Sublime Text, Atom, and more.
-</h3>
+</p>
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3fdb9649-ad7f-4f62-8134-a300576e58c0/deploy-status)](https://app.netlify.com/sites/halcyon-theme/deploys)
 
 ## 🖥 Platforms
 
