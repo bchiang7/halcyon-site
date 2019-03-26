@@ -1,7 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: 'Halcyon',
+    title: 'Halcyon Theme',
     description: 'A minimal, dark blue theme for VS Code, Sublime Text, Atom, and more.',
+    keywords: 'Halcyon theme, halcyon, theme, dark blue theme, VS Code theme',
+    twitterHandle: '@bchiang7',
+    siteURL: 'https://halcyon-theme.netlify.com',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
