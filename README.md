@@ -7,8 +7,11 @@
 <p align="center">
   A minimal, dark blue theme for VS Code, Sublime Text, Atom, and more.
 </p>
+<p align="center">
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/3fdb9649-ad7f-4f62-8134-a300576e58c0/deploy-status)](https://app.netlify.com/sites/halcyon-theme/deploys)
+
+</p>
 
 ## 🚀 Quick start
 
