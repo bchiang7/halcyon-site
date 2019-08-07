@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { theme, media } from '@styles';
+const { colors, fontSizes } = theme;
 import Sublime from '../images/logos/sublime.png';
 import Atom from '../images/logos/atom-green.png';
 import VSCode from '../images/logos/vscode-new.png';
@@ -30,7 +31,7 @@ const Platform = styled.a`
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  background-color: ${theme.colors.active};
+  background-color: ${colors.active};
   padding: 30px 20px;
   text-align: center;
   font-size: 16px;
@@ -40,7 +41,7 @@ const Platform = styled.a`
 
   &:hover,
   &:focus {
-    background-color: ${theme.colors.hover};
+    background-color: ${colors.hover};
     transform: translateY(-5px);
     outline: 0;
   }
@@ -52,8 +53,8 @@ const Platform = styled.a`
 `;
 const PlatformName = styled.div`
   margin-top: 20px;
-  color: ${theme.colors.white};
-  font-size: ${theme.fontSizes.base};
+  color: ${colors.white};
+  font-size: ${fontSizes.base};
   line-height: 1.5;
 `;
 

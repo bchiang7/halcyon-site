@@ -1,6 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 import theme from './theme';
 import mixins from './mixins';
+const { colors, fonts, fontSizes } = theme;
 
 const GlobalStyle = createGlobalStyle`
   html {
@@ -21,11 +22,11 @@ const GlobalStyle = createGlobalStyle`
     overflow-x: hidden;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    font-family: ${theme.fonts.base};
-    font-size: ${theme.fontSizes.base};
+    font-family: ${fonts.base};
+    font-size: ${fontSizes.base};
     line-height: 1.25;
-    color: ${theme.colors.white};
-    background: ${theme.colors.fg};
+    color: ${colors.white};
+    background: ${colors.fg};
     ${mixins.bgGradient};
   }
 

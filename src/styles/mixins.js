@@ -1,5 +1,6 @@
 import { css } from 'styled-components';
 import theme from './theme';
+const { colors } = theme;
 
 const mixins = {
   flexCenter: css`
@@ -30,21 +31,14 @@ const mixins = {
     &:hover,
     &:active,
     &:focus {
-      color: ${theme.colors.accent};
+      color: ${colors.accent};
     }
   `,
 
   bgGradient: css`
-    background: -webkit-linear-gradient(to bottom, ${theme.colors.active}, ${theme.colors.bg});
-    background: linear-gradient(to bottom, ${theme.colors.active}, ${theme.colors.bg});
+    background: -webkit-linear-gradient(to bottom, ${colors.active}, ${colors.bg});
+    background: linear-gradient(to bottom, ${colors.active}, ${colors.bg});
   `,
-
-  //   tooltip: css`
-  // background-color: $color;
-  //   &:before {
-  //     content: attr(data-hex);
-  //   }
-  // `,
 };
 
 export default mixins;
