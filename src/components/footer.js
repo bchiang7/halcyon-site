@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { theme, mixins } from '../styles';
+import { theme, mixins } from '@styles';
 const { colors } = theme;
 import Logo from '../images/logo.png';
 
@@ -10,10 +10,11 @@ const FooterContainer = styled.footer`
   color: ${theme.colors.grey};
   font-size: ${theme.fontSizes.base};
   text-align: center;
-  padding: 50px;
+  padding: 50px 25px;
+  margin-top: 100px;
   img {
     width: 70px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
   a {
     padding: 10px 15px;

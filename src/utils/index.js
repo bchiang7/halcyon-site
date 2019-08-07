@@ -20,4 +20,4 @@ const copyToClipboard = str => {
   }
 };
 
-export default copyToClipboard;
+export { copyToClipboard };

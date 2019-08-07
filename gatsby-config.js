@@ -13,8 +13,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
+        name: 'halcyon-theme',
+        short_name: 'Halcyon Theme',
         start_url: '/',
         background_color: '#171c28',
         theme_color: '#1d2433',

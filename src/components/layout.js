@@ -1,13 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { StaticQuery, graphql } from 'gatsby';
-
-import Head from './head';
-import Header from './header';
-import Footer from './footer';
-
+import { Head, Header, Footer } from '@components';
 import styled from 'styled-components';
-import { GlobalStyle } from '../styles';
+import { GlobalStyle } from '@styles';
 
 const Site = styled.div`
   min-height: 100vh;

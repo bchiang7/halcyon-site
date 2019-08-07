@@ -1,22 +1,29 @@
 import React from 'react';
-
 import styled from 'styled-components';
-import { theme, media } from '../styles';
-
+import { theme, media } from '@styles';
 import Sublime from '../images/logos/sublime.png';
 import Atom from '../images/logos/atom-green.png';
 import VSCode from '../images/logos/vscode-new.png';
 import iTerm from '../images/logos/iterm.png';
 import Hyper from '../images/logos/hyperterm.png';
 
-const PlatformsContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
+const PlatformsContainer = styled.section`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
   justify-content: center;
   padding: 50px;
   width: 100%;
-
-  ${media.tablet`padding: 50px 25px;`};
+  max-width: 1440px;
+  margin: 100px auto 200px;
+  ${media.tablet`
+    padding: 50px 25px;
+    margin: 50px auto 100px;
+  `};
+  ${media.phoneXL`
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 10px;
+  `};
 `;
 const Platform = styled.a`
   display: flex;
@@ -24,26 +31,30 @@ const Platform = styled.a`
   align-items: center;
   justify-content: space-around;
   background-color: ${theme.colors.active};
-  height: 200px;
-  padding: 30px;
+  padding: 30px 20px;
   text-align: center;
   font-size: 16px;
+  border-radius: 4px;
   transition: ${theme.transition};
-  min-width: 250px;
-  margin: 10px;
+  ${media.phoneXL`padding: 20px;`};
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: ${theme.colors.hover};
     transform: translateY(-5px);
+    outline: 0;
+  }
+
+  img {
+    width: 70px;
+    ${media.tablet`width: 50px;`};
   }
 `;
-const Logo = styled.img`
-  width: 90px;
-`;
 const PlatformName = styled.div`
-  margin-top: 15px;
+  margin-top: 20px;
   color: ${theme.colors.white};
   font-size: ${theme.fontSizes.base};
+  line-height: 1.5;
 `;
 
 const platforms = [
@@ -53,7 +64,7 @@ const platforms = [
     logo: VSCode,
   },
   {
-    name: 'Sublime Text',
+    name: 'Sublime',
     url: 'https://packagecontrol.io/packages/Halcyon%20Theme',
     logo: Sublime,
   },
@@ -78,7 +89,7 @@ const Platforms = () => (
   <PlatformsContainer>
     {platforms.map(({ name, url, logo }, i) => (
       <Platform key={i} href={url} target="_blank" rel="noopener noreferrer">
-        <Logo src={logo} alt={name} />
+        <img src={logo} alt={name} />
         <PlatformName>{name}</PlatformName>
       </Platform>
     ))}
