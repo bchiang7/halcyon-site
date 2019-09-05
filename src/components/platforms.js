@@ -4,7 +4,7 @@ import { theme, media } from '@styles';
 const { colors, fontSizes } = theme;
 import Sublime from '../images/logos/sublime.png';
 import Atom from '../images/logos/atom-green.png';
-import VSCode from '../images/logos/vscode-new.png';
+import VSCode from '../images/logos/vscode.png';
 import iTerm from '../images/logos/iterm.png';
 import Hyper from '../images/logos/hyperterm.png';
 
