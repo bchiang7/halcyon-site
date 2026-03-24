@@ -4,7 +4,7 @@ const theme = {
     fg: '#1d2433',
     hover: '#2f3b54',
     active: '#2f3b54',
-    grey: '#8695b7',
+    grey: '#96a6cc',
     lightGrey: '#a2aabc',
     white: '#d7dce2',
     accent: '#ffcc66',
