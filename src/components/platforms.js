@@ -7,6 +7,7 @@ import Atom from '../images/logos/atom-green.png';
 import VSCode from '../images/logos/vscode.png';
 import iTerm from '../images/logos/iterm.png';
 import Hyper from '../images/logos/hyperterm.png';
+import Zed from '../images/logos/zed.jpeg';
 
 const PlatformsContainer = styled.section`
   display: grid;
@@ -83,6 +84,11 @@ const platforms = [
     name: 'Hyper',
     url: 'https://www.npmjs.com/package/hyper-halcyon-theme',
     logo: Hyper,
+  },
+  {
+    name: 'Zed',
+    url: 'https://github.com/hichemfantar/halcyon-zed',
+    logo: Zed,
   },
 ];
 
